@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Projects — Dillan Valor</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root{ --bg:#0B0B0B; --fg:#F8F8F8; --muted:#9CA3AF; --accent-cyan:#06b6d4; }
+    body{ background:var(--bg); color:var(--fg); }
+    .card { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.03); border-radius: 0.75rem; padding: 1rem; }
+  </style>
+</head>
+<body class="antialiased">
+  <header class="py-8 border-b border-[rgba(255,255,255,0.03)]">
+    <div class="max-w-6xl mx-auto px-6 flex items-center justify-between">
+      <div>
+        <a href="/" class="text-sm text-[color:var(--muted)]">← Home</a>
+        <h1 class="text-4xl font-bold mt-4">Selected Projects & Coursework</h1>
+        <p class="text-[color:var(--muted)] mt-2">Infrastructure initiatives, security implementations, and lab write-ups.</p>
+      </div>
+      <div>
+        <a href="/assets/resume.pdf" class="text-sm bg-[rgba(255,255,255,0.03)] px-3 py-2 rounded">Download resume</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="py-12">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Project card example (duplicate and edit for each project) -->
+        <article class="card">
+          <img src="/assets/project-pinning-1200.jpg" alt="Network hardening diagram" class="w-full h-40 object-cover rounded" />
+          <h3 class="text-xl font-bold mt-4 text-[color:var(--accent-cyan)]">Network Hardening Workshop</h3>
+          <p class="text-[color:#cbd5e1] mt-2">Layered hardening for Windows servers and FortiGate firewall; improved monitoring and reduced attack surface.</p>
+          <div class="mt-3 text-sm text-[color:var(--muted)]">Tech: FortiGate, Windows Server, PowerShell</div>
+          <div class="mt-4 flex gap-2">
+            <a href="#" class="text-[color:var(--muted)] underline">Case study</a>
+            <a href="#" class="ml-auto bg-[rgba(255,255,255,0.03)] px-3 py-1 rounded">View</a>
+          </div>
+        </article>
+
+        <!-- Placeholder -->
+        <article class="card">
+          <div class="h-40 bg-[rgba(255,255,255,0.02)] rounded flex items-center justify-center text-[color:var(--muted)]">Project image</div>
+          <h3 class="text-xl font-bold mt-4 text-[color:var(--accent-cyan)]">CTF Write-Up: Web Exploitation</h3>
+          <p class="text-[color:#cbd5e1] mt-2">Exploit breakdown and secure code mitigation checklist.</p>
+          <div class="mt-4 flex gap-2">
+            <a href="#" class="text-[color:var(--muted)] underline">Read</a>
+            <a href="#" class="ml-auto bg-[rgba(255,255,255,0.03)] px-3 py-1 rounded">View</a>
+          </div>
+        </article>
+
+        <!-- Add more projects here -->
+      </div>
+    </div>
+  </main>
+
+  <footer class="py-8 border-t border-[rgba(255,255,255,0.03)] text-sm text-[color:var(--muted)]">
+    <div class="max-w-6xl mx-auto px-6 flex justify-between">
+      <div>© <span id="year"></span> Dillan Valor</div>
+      <div><a href="/" class="text-[color:var(--muted)]">Home</a> · <a href="experience.html" class="text-[color:var(--muted)]">Experience</a></div>
+    </div>
+  </footer>
+
+  <script>try{document.getElementById('year').textContent=new Date().getFullYear()}catch(e){}</script>
+</body>
+</html>
