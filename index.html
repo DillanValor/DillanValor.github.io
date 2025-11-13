@@ -14,6 +14,22 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
 
+  <meta name="description" content="IT Engineer & Cybersecurity Specialist helping teams turn complex problems into secure, documented solutions." />
+  <link rel="canonical" href="https://valorworks.dev/" />
+  <meta property="og:title" content="Dillan Valor — IT Engineer & Cybersecurity Specialist" />
+  <meta property="og:description" content="United States Navy Submarine veteran focused on IT engineering, hardening, and cybersecurity excellence." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://valorworks.dev/" />
+  <meta property="og:image" content="https://valorworks.dev/assets/service-award.png" />
+  <meta property="og:site_name" content="valorworks.dev" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="/assets/warfare-ensignia.png" />
+  <link rel="preconnect" href="https://cdn.tailwindcss.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet" />
+  <link rel="preload" as="image" href="/assets/submarine.png" />
+  <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
   <style>
     :root{
       --bg:#0a0a0a;          /* black */
@@ -21,8 +37,15 @@
       --red:#b91c1c;         /* brand red */
       --gold:#d4af37;        /* brand gold */
       --muted:#a3a3a3;       /* gray text */
+    :root {
+      --bg: #050505;
+      --card: #121212;
+      --red: #b91c1c;
+      --gold: #d4af37;
+      --muted: #a3a3a3;
     }
     html,body{font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";}
+    html, body { font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif; background: var(--bg); color: #fff; }
   </style>
 </head>
 
@@ -33,40 +56,70 @@
       <a href="/" class="flex items-center gap-3 font-semibold">
         <img src="/assets/warfare-ensignia.jpg" alt="Submarine warfare insignia" class="h-6 w-10 object-contain opacity-90">
         <span class="tracking-wide">Dillan Valor</span>
+  <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-3 focus:left-3 focus:z-50 focus:rounded focus:bg-[var(--gold)] focus:px-3 focus:py-1 focus:text-black">Skip to content</a>
+  <header class="sticky top-0 z-30 border-b border-white/10 bg-black/60 backdrop-blur supports-[backdrop-filter]:bg-black/50">
+    <nav class="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6 lg:px-8" aria-label="Primary">
+      <a href="/" class="flex items-center gap-3 font-semibold tracking-wide" aria-current="page">
+        <img src="/assets/warfare-ensignia.png" alt="Submarine warfare insignia" class="h-8 w-12 rounded object-cover" loading="lazy" decoding="async" />
+        <span>Dillan Valor</span>
       </a>
       <div class="hidden sm:flex items-center gap-6 text-sm">
         <a class="hover:text-[var(--gold)]" href="/experience.html">Experience</a>
         <a class="hover:text-[var(--gold)]" href="/projects.html">Projects</a>
         <a class="hover:text-[var(--gold)]" href="/education.html">Education</a>
         <a class="rounded-lg border border-white/15 px-3 py-1.5 hover:border-[var(--gold)] hover:text-[var(--gold)]" href="mailto:hello@valorworks.dev">Contact</a>
+      <div class="hidden items-center gap-6 text-sm font-medium md:flex">
+        <a class="transition hover:text-[var(--gold)]" href="/experience.html">Experience</a>
+        <a class="transition hover:text-[var(--gold)]" href="/projects.html">Projects</a>
+        <a class="transition hover:text-[var(--gold)]" href="/education.html">Education</a>
+        <a class="rounded-lg border border-white/20 px-3 py-1.5 transition hover:border-[var(--gold)] hover:text-[var(--gold)]" href="mailto:hello@valorworks.dev">Contact</a>
       </div>
+      <details class="relative md:hidden">
+        <summary class="flex cursor-pointer items-center gap-2 rounded-lg border border-white/20 px-3 py-1.5 text-sm">Menu</summary>
+        <div class="absolute right-0 mt-2 w-48 rounded-xl border border-white/10 bg-black/90 p-3 text-sm shadow-lg">
+          <a class="block rounded px-2 py-1 hover:bg-white/10" href="/experience.html">Experience</a>
+          <a class="block rounded px-2 py-1 hover:bg-white/10" href="/projects.html">Projects</a>
+          <a class="block rounded px-2 py-1 hover:bg-white/10" href="/education.html">Education</a>
+          <a class="block rounded px-2 py-1 hover:bg-white/10" href="mailto:hello@valorworks.dev">Contact</a>
+        </div>
+      </details>
     </nav>
   </header>
 
   <!-- HERO -->
   <main class="relative">
+  <main id="main-content" class="relative">
     <section class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
       <div class="grid lg:grid-cols-2 items-center gap-12">
+      <div class="grid gap-12 lg:grid-cols-2 lg:items-center">
         <div>
           <p class="text-xs uppercase tracking-[0.2em] text-[var(--gold)]/90 mb-3">Portfolio</p>
           <h1 class="text-3xl sm:text-5xl font-extrabold leading-tight">
             IT Engineer & Cybersecurity Specialist <span class="text-[var(--gold)]">|</span>
+          <p class="text-xs uppercase tracking-[0.25em] text-[var(--gold)]/80">Portfolio</p>
+          <h1 class="mt-3 text-4xl font-black leading-tight text-balance sm:text-5xl">
+            IT Engineer &amp; Cybersecurity Specialist <span class="text-[var(--gold)]">|</span>
             <span class="text-white/90">Turning Complex Problems into Secure Solutions</span>
           </h1>
 
           <p class="mt-4 text-base sm:text-lg text-[var(--muted)]">
             I’m a United States Navy Submarine veteran and IT Engineer and cybersecurity specialist dedicated to
             architecting robust, scalable systems and preemptively neutralizing threats so businesses can operate with confidence.
+          <p class="mt-5 text-lg text-[var(--muted)]">
+            United States Navy Submarine veteran focused on architecting resilient infrastructure, modernizing Microsoft 365 and Azure estates, and reducing risk through disciplined cyber defense and documentation.
           </p>
 
           <div class="mt-8 flex flex-wrap items-center gap-3">
             <a href="/projects.html"
                class="inline-flex items-center gap-2 rounded-xl bg-[var(--red)] px-5 py-3 font-semibold shadow hover:brightness-110 transition">
+            <a href="/projects.html" class="inline-flex items-center gap-2 rounded-xl bg-[var(--red)] px-5 py-3 font-semibold shadow-lg transition hover:brightness-110">
               Explore My Work
               <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 7l5 5-5 5M6 12h12" /></svg>
             </a>
 
             <a href="/assets/resume.pdf" class="inline-flex items-center gap-2 rounded-xl border border-white/15 px-5 py-3 font-semibold hover:border-[var(--gold)] hover:text-[var(--gold)] transition">
+            <a href="/assets/resume.pdf" class="inline-flex items-center gap-2 rounded-xl border border-white/20 px-5 py-3 font-semibold transition hover:border-[var(--gold)] hover:text-[var(--gold)]">
               Download Resume
             </a>
 
@@ -78,15 +131,30 @@
             <a class="underline hover:text-[var(--gold)]" href="/experience.html">Experience</a>
             <a class="underline hover:text-[var(--gold)]" href="/projects.html">Projects</a>
             <a class="underline hover:text-[var(--gold)]" href="/education.html">Education & Certs</a>
+            <span class="text-sm text-[var(--muted)]">Available for full-time &amp; contract roles</span>
           </div>
+          <dl class="mt-10 grid gap-4 text-sm text-[var(--muted)] sm:grid-cols-2">
+            <div>
+              <dt class="font-semibold text-white">Core Stack</dt>
+              <dd>Microsoft 365 · Azure · Fortinet · Veeam · Intune</dd>
+            </div>
+            <div>
+              <dt class="font-semibold text-white">Security Focus</dt>
+              <dd>Hardening · Threat Hunting · Incident Response</dd>
+            </div>
+          </dl>
         </div>
 
         <div class="relative">
           <div class="rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
             <img src="/assets/submarine.jpg" alt="USS North Carolina underway" class="w-full h-full object-cover">
+          <div class="overflow-hidden rounded-3xl border border-white/10 shadow-2xl">
+            <img src="/assets/submarine.png" alt="United States Navy submarine underway" width="1600" height="900" fetchpriority="high" decoding="async" class="h-full w-full object-cover" />
           </div>
           <div class="absolute -bottom-4 -right-4 bg-[var(--card)]/70 backdrop-blur rounded-xl px-4 py-3 border border-white/10">
             <p class="text-xs text-[var(--muted)]">Deployed on GitHub Pages • Protected by Cloudflare</p>
+          <div class="absolute -bottom-4 -right-4 rounded-xl border border-white/10 bg-[var(--card)]/90 px-4 py-3 text-xs text-[var(--muted)] shadow-lg">
+            Deployed on GitHub Pages • Protected by Cloudflare
           </div>
         </div>
       </div>
@@ -104,9 +172,21 @@
           <p class="mt-1 font-semibold">Hardening • Threat Hunting • Incident Response • DLP</p>
         </div>
         <div class="rounded-xl bg-black/30 border border-white/10 p-5">
+      <div class="mx-auto grid max-w-6xl gap-6 px-4 py-10 sm:px-6 lg:grid-cols-3 lg:px-8">
+        <article class="rounded-2xl border border-white/10 bg-black/40 p-5">
+          <p class="text-sm text-[var(--muted)]">Mission</p>
+          <p class="mt-2 text-lg font-semibold">Prevent incidents before they start through proactive hardening and observability.</p>
+        </article>
+        <article class="rounded-2xl border border-white/10 bg-black/40 p-5">
           <p class="text-sm text-[var(--muted)]">Values</p>
           <p class="mt-1 font-semibold">Integrity • Ownership • Clear Documentation</p>
         </div>
+          <p class="mt-2 text-lg font-semibold">Integrity · Ownership · Clear documentation for every change.</p>
+        </article>
+        <article class="rounded-2xl border border-white/10 bg-black/40 p-5">
+          <p class="text-sm text-[var(--muted)]">Tooling</p>
+          <p class="mt-2 text-lg font-semibold">Azure AD/Entra · Intune · FortiGate · SentinelOne · Veeam</p>
+        </article>
       </div>
     </section>
 
@@ -114,13 +194,19 @@
     <section class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-16">
       <div class="rounded-2xl border border-white/10 bg-[var(--card)] p-8 sm:p-10">
         <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6">
+    <section class="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+      <div class="rounded-3xl border border-white/10 bg-[var(--card)] px-6 py-8 sm:px-10">
+        <div class="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
           <div>
             <h2 class="text-2xl font-bold">See security projects & write-ups</h2>
             <p class="mt-1 text-[var(--muted)]">Real remediation work, labs, and course notes — updated as you complete them.</p>
+            <h2 class="text-2xl font-bold">Featured security initiatives</h2>
+            <p class="mt-2 text-[var(--muted)]">Real remediation projects, lab work, and course notes to demonstrate repeatable process.</p>
           </div>
           <a href="/projects.html" class="inline-flex items-center gap-2 rounded-xl bg-[var(--red)] px-5 py-3 font-semibold shadow hover:brightness-110 transition">
             View Projects
           </a>
+          <a href="/projects.html" class="inline-flex items-center gap-2 rounded-xl bg-[var(--red)] px-5 py-3 font-semibold shadow-lg transition hover:brightness-110">View Projects</a>
         </div>
       </div>
     </section>
@@ -130,6 +216,8 @@
   <footer class="border-t border-white/10">
     <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-8 text-sm text-[var(--muted)] flex flex-col sm:flex-row items-center justify-between gap-3">
       <p>© <span id="y"></span> Dillan Valor • valorworks.dev</p>
+    <div class="mx-auto flex max-w-6xl flex-col gap-4 px-4 py-8 text-sm text-[var(--muted)] sm:flex-row sm:items-center sm:justify-between">
+      <p>© <span id="year"></span> Dillan Valor • valorworks.dev</p>
       <div class="flex items-center gap-4">
         <a class="hover:text-[var(--gold)]" href="mailto:hello@valorworks.dev">Email</a>
         <a class="hover:text-[var(--gold)]" href="https://github.com/DillanValor" rel="noopener">GitHub</a>
@@ -142,6 +230,6 @@
     // year
     document.getElementById('y').textContent = new Date().getFullYear();
   </script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
-
