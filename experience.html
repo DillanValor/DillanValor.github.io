@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Experience — Dillan Valor</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Professional experience — Dillan Valor. IT Support Engineer, Network Administrator, US Navy Submarine Force." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root{ --bg:#0B0B0B; --fg:#F8F8F8; --muted:#9CA3AF; --accent-cyan:#06b6d4; }
+    body{ background:var(--bg); color:var(--fg); }
+    .card { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.03); border-radius: 0.75rem; padding: 1.5rem; }
+  </style>
+</head>
+<body class="antialiased">
+  <header class="py-8 border-b border-[rgba(255,255,255,0.03)]">
+    <div class="max-w-5xl mx-auto px-6">
+      <a href="/" class="text-sm text-[color:var(--muted)]">← Home</a>
+      <h1 class="text-4xl font-bold mt-4">Professional Experience</h1>
+      <p class="text-[color:var(--muted)] mt-2">13+ years securing networks, managing infrastructure, and delivering mission-critical IT support.</p>
+    </div>
+  </header>
+
+  <main class="py-12">
+    <div class="max-w-5xl mx-auto px-6 space-y-8">
+      <!-- CYNC Solutions -->
+      <section class="card">
+        <div class="flex items-start justify-between">
+          <div>
+            <h2 class="text-2xl font-bold text-[color:var(--accent-cyan)]">IT Support Engineer</h2>
+            <div class="text-sm text-[color:var(--muted)] mt-1">CYNC Solutions — Ringgold, GA · May 2024 – Present</div>
+          </div>
+          <div class="text-sm text-[color:var(--muted)]">Skills: FortiGate, VMware, Azure AD, SentinelOne, Veeam, Intune</div>
+        </div>
+
+        <p class="mt-4 text-[color:#cbd5e1]">
+          Provide Tier II/III support across 40+ client environments, troubleshooting server, network, and endpoint issues.
+          Lead infrastructure security initiatives and service delivery excellence for a managed service provider.
+        </p>
+
+        <h4 class="mt-4 font-semibold text-[color:var(--muted)]">Key achievements</h4>
+        <ul class="mt-2 list-disc list-inside text-[color:#cbd5e1] space-y-1">
+          <li>Configured and maintained Fortinet firewalls, VPNs, and routing policies across multi-site networks.</li>
+          <li>Managed Veeam backup infrastructure and resolved VSS writer / snapshot failures.</li>
+          <li>Deployed and maintained Intune and Azure AD with Conditional Access policies.</li>
+          <li>Administered SentinelOne EDR, email security, and patch compliance programs.</li>
+          <li>Authored SOPs and technical documentation to standardize MSP workflows and SLAs.</li>
+        </ul>
+      </section>
+
+      <!-- Kenco -->
+      <section class="card">
+        <div class="flex items-start justify-between">
+          <div>
+            <h2 class="text-2xl font-bold text-[color:var(--accent-cyan)]">Network Administrator</h2>
+            <div class="text-sm text-[color:var(--muted)] mt-1">Kenco Management Services — Chattanooga, TN · 2022 – 2024</div>
+          </div>
+          <div class="text-sm text-[color:var(--muted)]">Skills: AWS, Juniper SRX, VPN, LogicMonitor</div>
+        </div>
+
+        <p class="mt-4 text-[color:#cbd5e1]">
+          Designed and maintained networking infrastructure for 100+ warehouse and office sites across the United States,
+          ensuring secure connectivity and optimal performance.
+        </p>
+
+        <h4 class="mt-4 font-semibold text-[color:var(--muted)]">Key achievements</h4>
+        <ul class="mt-2 list-disc list-inside text-[color:#cbd5e1] space-y-1">
+          <li>Deployed AWS vSRX VPN tunnels for secure site-to-site connectivity.</li>
+          <li>Reduced network downtime incidents by 20% through LogicMonitor implementation.</li>
+          <li>Improved mean-time-to-repair by 30% via vendor coordination and escalation management.</li>
+          <li>Documented IP architectures and VPN configs to speed onboarding.</li>
+        </ul>
+      </section>
+
+      <!-- US Navy -->
+      <section class="card">
+        <div class="flex items-start justify-between">
+          <div>
+            <h2 class="text-2xl font-bold text-[color:var(--accent-cyan)]">Systems Administrator / IT Specialist</h2>
+            <div class="text-sm text-[color:var(--muted)] mt-1">United States Navy (Submarine Force) — Various Locations · 2013 – 2022</div>
+          </div>
+          <div class="text-sm text-[color:var(--muted)]">Skills: Active Directory, Exchange, DoD Compliance, IDS/IPS</div>
+        </div>
+
+        <p class="mt-4 text-[color:#cbd5e1]">
+          Managed IT infrastructure for mission-critical systems under DoD security compliance standards.
+          Supported 200+ users aboard submarines with zero-defect operations.
+        </p>
+
+        <h4 class="mt-4 font-semibold text-[color:var(--muted)]">Key achievements</h4>
+        <ul class="mt-2 list-disc list-inside text-[color:#cbd5e1] space-y-1">
+          <li>Managed Active Directory, Exchange, and backup systems for 200+ users.</li>
+          <li>Monitored and remediated cybersecurity threats with IDS/IPS tools.</li>
+          <li>Authored system recovery and incident response procedures used shipboard-wide.</li>
+          <li>Earned Submariner Warfare qualification for technical leadership and mission performance.</li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <footer class="py-8 border-t border-[rgba(255,255,255,0.03)] text-sm text-[color:var(--muted)]">
+    <div class="max-w-5xl mx-auto px-6 flex justify-between">
+      <div>© <span id="year"></span> Dillan Valor</div>
+      <div><a href="/" class="text-[color:var(--muted)]">Home</a> · <a href="education.html" class="text-[color:var(--muted)]">Education</a></div>
+    </div>
+  </footer>
+
+  <script>try{document.getElementById('year').textContent=new Date().getFullYear()}catch(e){}</script>
+</body>
+</html>
