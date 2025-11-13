@@ -8,6 +8,11 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="description" content="Professional experience — Dillan Valor. IT Support Engineer, Network Administrator, US Navy Submarine Force." />
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root{ --bg:#0B0B0B; --fg:#F8F8F8; --muted:#9CA3AF; --accent-cyan:#06b6d4; }
+    body{ background:var(--bg); color:var(--fg); }
+    .card { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.03); border-radius: 0.75rem; padding: 1.5rem; }
+  </style>
   <meta name="description" content="Professional experience for Dillan Valor — IT engineer delivering secure infrastructure, MSP service excellence, and submarine force leadership." />
   <link rel="canonical" href="https://valorworks.dev/experience.html" />
   <meta property="og:title" content="Experience — Dillan Valor" />
@@ -16,24 +21,7 @@
   <meta property="og:url" content="https://valorworks.dev/experience.html" />
   <meta property="og:image" content="https://valorworks.dev/assets/service-award.png" />
   <link rel="icon" href="/assets/warfare-ensignia.png" />
-  <link rel="preconnect" href="https://cdn.tailwindcss.com" crossorigin>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet" />
-  <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
-  <style>
-    :root{ --bg:#0B0B0B; --fg:#F8F8F8; --muted:#9CA3AF; --accent-cyan:#06b6d4; }
-    body{ background:var(--bg); color:var(--fg); }
-    .card { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.03); border-radius: 0.75rem; padding: 1.5rem; }
-    :root {
-      --bg: #050505;
-      --card: #121212;
-      --red: #b91c1c;
-      --gold: #d4af37;
-      --muted: #a3a3a3;
-    }
-    html, body { font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif; background: var(--bg); color: #fff; }
-  </style>
+  <link rel="stylesheet" href="/assets/styles.css" />
 </head>
 <body class="antialiased">
   <header class="py-8 border-b border-[rgba(255,255,255,0.03)]">
@@ -42,27 +30,27 @@
       <h1 class="text-4xl font-bold mt-4">Professional Experience</h1>
       <p class="text-[color:var(--muted)] mt-2">13+ years securing networks, managing infrastructure, and delivering mission-critical IT support.</p>
     </div>
-<body class="bg-[var(--bg)] text-white antialiased selection:bg-[var(--red)] selection:text-white">
-  <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-3 focus:left-3 focus:z-50 focus:rounded focus:bg-[var(--gold)] focus:px-3 focus:py-1 focus:text-black">Skip to content</a>
-  <header class="sticky top-0 z-30 border-b border-white/10 bg-black/60 backdrop-blur supports-[backdrop-filter]:bg-black/50">
-    <nav class="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6 lg:px-8" aria-label="Primary">
-      <a href="/" class="flex items-center gap-3 font-semibold tracking-wide">
-        <img src="/assets/warfare-ensignia.png" alt="Submarine warfare insignia" class="h-8 w-12 rounded object-cover" loading="lazy" decoding="async" />
+<body>
+  <a href="#main-content" class="skip-link">Skip to content</a>
+  <header class="site-header">
+    <nav class="site-nav" aria-label="Primary">
+      <a href="/" class="brand">
+        <img src="/assets/warfare-ensignia.png" alt="Submarine warfare insignia" loading="lazy" decoding="async" />
         <span>Dillan Valor</span>
       </a>
-      <div class="hidden items-center gap-6 text-sm font-medium md:flex">
-        <a class="transition hover:text-[var(--gold)]" href="/experience.html" aria-current="page">Experience</a>
-        <a class="transition hover:text-[var(--gold)]" href="/projects.html">Projects</a>
-        <a class="transition hover:text-[var(--gold)]" href="/education.html">Education</a>
-        <a class="rounded-lg border border-white/20 px-3 py-1.5 transition hover:border-[var(--gold)] hover:text-[var(--gold)]" href="mailto:hello@valorworks.dev">Contact</a>
+      <div class="nav-links" role="menubar">
+        <a class="nav-link" href="/experience.html" aria-current="page" role="menuitem">Experience</a>
+        <a class="nav-link" href="/projects.html" role="menuitem">Projects</a>
+        <a class="nav-link" href="/education.html" role="menuitem">Education</a>
+        <a class="nav-link contact-link" href="mailto:hello@valorworks.dev" role="menuitem">Contact</a>
       </div>
-      <details class="relative md:hidden">
-        <summary class="flex cursor-pointer items-center gap-2 rounded-lg border border-white/20 px-3 py-1.5 text-sm">Menu</summary>
-        <div class="absolute right-0 mt-2 w-48 rounded-xl border border-white/10 bg-black/90 p-3 text-sm shadow-lg">
-          <a class="block rounded px-2 py-1 hover:bg-white/10" href="/experience.html" aria-current="page">Experience</a>
-          <a class="block rounded px-2 py-1 hover:bg-white/10" href="/projects.html">Projects</a>
-          <a class="block rounded px-2 py-1 hover:bg-white/10" href="/education.html">Education</a>
-          <a class="block rounded px-2 py-1 hover:bg-white/10" href="mailto:hello@valorworks.dev">Contact</a>
+      <details class="nav-menu">
+        <summary aria-label="Toggle navigation">Menu</summary>
+        <div class="mobile-menu" role="menu">
+          <a href="/experience.html" aria-current="page" role="menuitem">Experience</a>
+          <a href="/projects.html" role="menuitem">Projects</a>
+          <a href="/education.html" role="menuitem">Education</a>
+          <a href="mailto:hello@valorworks.dev" role="menuitem">Contact</a>
         </div>
       </details>
     </nav>
@@ -73,29 +61,29 @@
       <!-- CYNC Solutions -->
       <section class="card">
         <div class="flex items-start justify-between">
-  <main id="main-content" class="mx-auto max-w-5xl px-4 py-16 sm:px-6">
-    <header class="space-y-3 text-balance">
-      <p class="text-sm uppercase tracking-[0.3em] text-[var(--gold)]/80">Experience</p>
-      <h1 class="text-4xl font-black sm:text-5xl">Professional Experience</h1>
-      <p class="text-lg text-[var(--muted)]">13+ years securing networks, modernizing infrastructure, and supporting mission-critical teams.</p>
+  <main id="main-content" class="page-shell">
+    <header class="page-header">
+      <p class="kicker">Experience</p>
+      <h1>Professional Experience</h1>
+      <p>13+ years securing networks, modernizing infrastructure, and supporting mission-critical teams.</p>
     </header>
 
-    <figure class="mt-10 overflow-hidden rounded-3xl border border-white/10 bg-black/40">
-      <img src="/assets/service-award.png" alt="Dillan Valor receiving submarine warfare qualification" loading="lazy" decoding="async" width="1500" height="900" class="w-full object-cover" />
-      <figcaption class="px-5 py-3 text-xs uppercase tracking-[0.2em] text-[var(--muted)]">Submarine Warfare insignia awarded for technical leadership</figcaption>
+    <figure class="feature-figure">
+      <img src="/assets/service-award.png" alt="Dillan Valor receiving submarine warfare qualification" loading="lazy" decoding="async" width="1500" height="900" />
+      <figcaption>Submarine Warfare insignia awarded for technical leadership</figcaption>
     </figure>
 
-    <section class="mt-12 space-y-8">
-      <article class="rounded-3xl border border-white/10 bg-[var(--card)]/70 p-6 shadow-lg">
-        <div class="flex flex-col justify-between gap-4 sm:flex-row sm:items-start">
+    <section class="card-stack">
+      <article class="experience-card">
+        <div class="card-headline">
           <div>
             <h2 class="text-2xl font-bold text-[color:var(--accent-cyan)]">IT Support Engineer</h2>
             <div class="text-sm text-[color:var(--muted)] mt-1">CYNC Solutions — Ringgold, GA · May 2024 – Present</div>
-            <h2 class="text-2xl font-bold">IT Support Engineer — CYNC Solutions</h2>
-            <p class="text-sm text-[var(--muted)]">Ringgold, GA · May 2024 – Present</p>
+            <h2>IT Support Engineer — CYNC Solutions</h2>
+            <p class="meta">Ringgold, GA · May 2024 – Present</p>
           </div>
           <div class="text-sm text-[color:var(--muted)]">Skills: FortiGate, VMware, Azure AD, SentinelOne, Veeam, Intune</div>
-          <p class="text-sm text-[var(--muted)]">FortiGate · VMware · Azure AD · SentinelOne · Veeam · Intune</p>
+          <p class="meta">FortiGate · VMware · Azure AD · SentinelOne · Veeam · Intune</p>
         </div>
 
         <p class="mt-4 text-[color:#cbd5e1]">
@@ -110,8 +98,8 @@
           <li>Deployed and maintained Intune and Azure AD with Conditional Access policies.</li>
           <li>Administered SentinelOne EDR, email security, and patch compliance programs.</li>
           <li>Authored SOPs and technical documentation to standardize MSP workflows and SLAs.</li>
-        <p class="mt-4 text-[var(--muted)]">Tier II/III escalation owner for 40+ client environments, leading remediation for server, network, and endpoint security incidents while hardening Microsoft 365 and Fortinet estates.</p>
-        <ul class="mt-4 space-y-2 text-sm text-white/90 list-disc pl-5">
+        <p class="card-summary">Tier II/III escalation owner for 40+ client environments, leading remediation for server, network, and endpoint security incidents while hardening Microsoft 365 and Fortinet estates.</p>
+        <ul class="bullet-list">
           <li>Stabilized multi-site FortiGate deployments by codifying VPN and routing templates with documented change control.</li>
           <li>Recovered failed Veeam jobs by troubleshooting VSS writers, storage saturation, and off-site replication gaps.</li>
           <li>Enforced Conditional Access, Intune compliance, and SentinelOne response workflows to reduce dwell time.</li>
@@ -122,16 +110,16 @@
       <!-- Kenco -->
       <section class="card">
         <div class="flex items-start justify-between">
-      <article class="rounded-3xl border border-white/10 bg-[var(--card)]/70 p-6 shadow-lg">
-        <div class="flex flex-col justify-between gap-4 sm:flex-row sm:items-start">
+      <article class="experience-card">
+        <div class="card-headline">
           <div>
             <h2 class="text-2xl font-bold text-[color:var(--accent-cyan)]">Network Administrator</h2>
             <div class="text-sm text-[color:var(--muted)] mt-1">Kenco Management Services — Chattanooga, TN · 2022 – 2024</div>
-            <h2 class="text-2xl font-bold">Network Administrator — Kenco Management Services</h2>
-            <p class="text-sm text-[var(--muted)]">Chattanooga, TN · 2022 – 2024</p>
+            <h2>Network Administrator — Kenco Management Services</h2>
+            <p class="meta">Chattanooga, TN · 2022 – 2024</p>
           </div>
           <div class="text-sm text-[color:var(--muted)]">Skills: AWS, Juniper SRX, VPN, LogicMonitor</div>
-          <p class="text-sm text-[var(--muted)]">AWS · Juniper SRX · VPN · LogicMonitor · SD-WAN</p>
+          <p class="meta">AWS · Juniper SRX · VPN · LogicMonitor · SD-WAN</p>
         </div>
 
         <p class="mt-4 text-[color:#cbd5e1]">
@@ -145,8 +133,8 @@
           <li>Reduced network downtime incidents by 20% through LogicMonitor implementation.</li>
           <li>Improved mean-time-to-repair by 30% via vendor coordination and escalation management.</li>
           <li>Documented IP architectures and VPN configs to speed onboarding.</li>
-        <p class="mt-4 text-[var(--muted)]">Designed and supported secure connectivity for 100+ logistics facilities, coordinating with carriers and on-site technicians to keep nationwide operations available.</p>
-        <ul class="mt-4 space-y-2 text-sm text-white/90 list-disc pl-5">
+        <p class="card-summary">Designed and supported secure connectivity for 100+ logistics facilities, coordinating with carriers and on-site technicians to keep nationwide operations available.</p>
+        <ul class="bullet-list">
           <li>Built AWS-hosted vSRX hubs and site-to-site VPN standards that reduced onboarding time by 30%.</li>
           <li>Implemented LogicMonitor dashboards to cut downtime incidents by 20% with proactive alerting.</li>
           <li>Documented escalation paths and IP schemas that shortened vendor MTTR across the portfolio.</li>
@@ -157,16 +145,16 @@
       <!-- US Navy -->
       <section class="card">
         <div class="flex items-start justify-between">
-      <article class="rounded-3xl border border-white/10 bg-[var(--card)]/70 p-6 shadow-lg">
-        <div class="flex flex-col justify-between gap-4 sm:flex-row sm:items-start">
+      <article class="experience-card">
+        <div class="card-headline">
           <div>
             <h2 class="text-2xl font-bold text-[color:var(--accent-cyan)]">Systems Administrator / IT Specialist</h2>
             <div class="text-sm text-[color:var(--muted)] mt-1">United States Navy (Submarine Force) — Various Locations · 2013 – 2022</div>
-            <h2 class="text-2xl font-bold">Systems Administrator / IT Specialist — United States Navy (Submarine Force)</h2>
-            <p class="text-sm text-[var(--muted)]">Various Locations · 2013 – 2022</p>
+            <h2>Systems Administrator / IT Specialist — United States Navy (Submarine Force)</h2>
+            <p class="meta">Various Locations · 2013 – 2022</p>
           </div>
           <div class="text-sm text-[color:var(--muted)]">Skills: Active Directory, Exchange, DoD Compliance, IDS/IPS</div>
-          <p class="text-sm text-[var(--muted)]">Active Directory · Exchange · DoD compliance · IDS/IPS</p>
+          <p class="meta">Active Directory · Exchange · DoD compliance · IDS/IPS</p>
         </div>
 
         <p class="mt-4 text-[color:#cbd5e1]">
@@ -180,8 +168,8 @@
           <li>Monitored and remediated cybersecurity threats with IDS/IPS tools.</li>
           <li>Authored system recovery and incident response procedures used shipboard-wide.</li>
           <li>Earned Submariner Warfare qualification for technical leadership and mission performance.</li>
-        <p class="mt-4 text-[var(--muted)]">Led shipboard IT operations for 200+ sailors, ensuring secure communications and zero-defect mission readiness under strict DoD accreditation.</p>
-        <ul class="mt-4 space-y-2 text-sm text-white/90 list-disc pl-5">
+        <p class="card-summary">Led shipboard IT operations for 200+ sailors, ensuring secure communications and zero-defect mission readiness under strict DoD accreditation.</p>
+        <ul class="bullet-list">
           <li>Maintained AD, Exchange, and backup systems with no data loss across multiple deployments.</li>
           <li>Authored recovery runbooks and incident response drills adopted across the submarine squadron.</li>
           <li>Qualified in Submarine Warfare for technical leadership, safety, and mission performance.</li>
@@ -196,18 +184,18 @@
     <div class="max-w-5xl mx-auto px-6 flex justify-between">
       <div>© <span id="year"></span> Dillan Valor</div>
       <div><a href="/" class="text-[color:var(--muted)]">Home</a> · <a href="education.html" class="text-[color:var(--muted)]">Education</a></div>
-  <footer class="border-t border-white/10">
-    <div class="mx-auto flex max-w-6xl flex-col gap-4 px-4 py-8 text-sm text-[var(--muted)] sm:flex-row sm:items-center sm:justify-between">
-      <p>© <span id="year"></span> Dillan Valor • valorworks.dev</p>
-      <div class="flex items-center gap-4">
-        <a class="hover:text-[var(--gold)]" href="mailto:hello@valorworks.dev">Email</a>
-        <a class="hover:text-[var(--gold)]" href="https://github.com/DillanValor" rel="noopener">GitHub</a>
-        <a class="hover:text-[var(--gold)]" href="/assets/resume.pdf">Resume</a>
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      <p>© <span data-current-year></span> Dillan Valor • valorworks.dev</p>
+      <div class="nav-links">
+        <a class="nav-link" href="mailto:hello@valorworks.dev">Email</a>
+        <a class="nav-link" href="https://github.com/DillanValor" rel="noopener">GitHub</a>
+        <a class="nav-link" href="/assets/resume.pdf">Resume</a>
       </div>
     </div>
   </footer>
 
   <script>try{document.getElementById('year').textContent=new Date().getFullYear()}catch(e){}</script>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="/assets/site.js" defer></script>
 </body>
 </html>
