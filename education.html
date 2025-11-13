@@ -6,6 +6,11 @@
   <title>Education & Certifications — Dillan Valor</title>
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root{ --bg:#0B0B0B; --fg:#F8F8F8; --muted:#9CA3AF; --accent-cyan:#06b6d4; }
+    body{ background:var(--bg); color:var(--fg); }
+    .card { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.03); border-radius: 0.75rem; padding: 1.5rem; }
+  </style>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Education &amp; Certifications — Dillan Valor</title>
   <meta name="description" content="Education, certifications, and continuous learning that support Dillan Valor's IT and cybersecurity work." />
@@ -16,24 +21,7 @@
   <meta property="og:url" content="https://valorworks.dev/education.html" />
   <meta property="og:image" content="https://valorworks.dev/assets/service-award.png" />
   <link rel="icon" href="/assets/warfare-ensignia.png" />
-  <link rel="preconnect" href="https://cdn.tailwindcss.com" crossorigin>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet" />
-  <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
-  <style>
-    :root{ --bg:#0B0B0B; --fg:#F8F8F8; --muted:#9CA3AF; --accent-cyan:#06b6d4; }
-    body{ background:var(--bg); color:var(--fg); }
-    .card { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.03); border-radius: 0.75rem; padding: 1.5rem; }
-    :root {
-      --bg: #050505;
-      --card: #121212;
-      --red: #b91c1c;
-      --gold: #d4af37;
-      --muted: #a3a3a3;
-    }
-    html, body { font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif; background: var(--bg); color: #fff; }
-  </style>
+  <link rel="stylesheet" href="/assets/styles.css" />
 </head>
 <body class="antialiased">
   <header class="py-8 border-b border-[rgba(255,255,255,0.03)]">
@@ -42,27 +30,27 @@
       <h1 class="text-4xl font-bold mt-4">Education & Certifications</h1>
       <p class="text-[color:var(--muted)] mt-2">Continuous learning in cybersecurity and IT infrastructure.</p>
     </div>
-<body class="bg-[var(--bg)] text-white antialiased selection:bg-[var(--red)] selection:text-white">
-  <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-3 focus:left-3 focus:z-50 focus:rounded focus:bg-[var(--gold)] focus:px-3 focus:py-1 focus:text-black">Skip to content</a>
-  <header class="sticky top-0 z-30 border-b border-white/10 bg-black/60 backdrop-blur supports-[backdrop-filter]:bg-black/50">
-    <nav class="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6 lg:px-8" aria-label="Primary">
-      <a href="/" class="flex items-center gap-3 font-semibold tracking-wide">
-        <img src="/assets/warfare-ensignia.png" alt="Submarine warfare insignia" class="h-8 w-12 rounded object-cover" loading="lazy" decoding="async" />
+<body>
+  <a href="#main-content" class="skip-link">Skip to content</a>
+  <header class="site-header">
+    <nav class="site-nav" aria-label="Primary">
+      <a href="/" class="brand">
+        <img src="/assets/warfare-ensignia.png" alt="Submarine warfare insignia" loading="lazy" decoding="async" />
         <span>Dillan Valor</span>
       </a>
-      <div class="hidden items-center gap-6 text-sm font-medium md:flex">
-        <a class="transition hover:text-[var(--gold)]" href="/experience.html">Experience</a>
-        <a class="transition hover:text-[var(--gold)]" href="/projects.html">Projects</a>
-        <a class="transition hover:text-[var(--gold)]" href="/education.html" aria-current="page">Education</a>
-        <a class="rounded-lg border border-white/20 px-3 py-1.5 transition hover:border-[var(--gold)] hover:text-[var(--gold)]" href="mailto:hello@valorworks.dev">Contact</a>
+      <div class="nav-links" role="menubar">
+        <a class="nav-link" href="/experience.html" role="menuitem">Experience</a>
+        <a class="nav-link" href="/projects.html" role="menuitem">Projects</a>
+        <a class="nav-link" href="/education.html" aria-current="page" role="menuitem">Education</a>
+        <a class="nav-link contact-link" href="mailto:hello@valorworks.dev" role="menuitem">Contact</a>
       </div>
-      <details class="relative md:hidden">
-        <summary class="flex cursor-pointer items-center gap-2 rounded-lg border border-white/20 px-3 py-1.5 text-sm">Menu</summary>
-        <div class="absolute right-0 mt-2 w-48 rounded-xl border border-white/10 bg-black/90 p-3 text-sm shadow-lg">
-          <a class="block rounded px-2 py-1 hover:bg-white/10" href="/experience.html">Experience</a>
-          <a class="block rounded px-2 py-1 hover:bg-white/10" href="/projects.html">Projects</a>
-          <a class="block rounded px-2 py-1 hover:bg-white/10" href="/education.html" aria-current="page">Education</a>
-          <a class="block rounded px-2 py-1 hover:bg-white/10" href="mailto:hello@valorworks.dev">Contact</a>
+      <details class="nav-menu">
+        <summary aria-label="Toggle navigation">Menu</summary>
+        <div class="mobile-menu" role="menu">
+          <a href="/experience.html" role="menuitem">Experience</a>
+          <a href="/projects.html" role="menuitem">Projects</a>
+          <a href="/education.html" aria-current="page" role="menuitem">Education</a>
+          <a href="mailto:hello@valorworks.dev" role="menuitem">Contact</a>
         </div>
       </details>
     </nav>
@@ -77,76 +65,64 @@
         </p>
         <p class="mt-2 text-[color:#cbd5e1]">Pursuing a practical, hands-on IT degree while working full-time, focusing on systems administration and cybersecurity.</p>
       </section>
-  <main id="main-content" class="mx-auto max-w-5xl px-4 py-16 sm:px-6">
-    <header class="space-y-3 text-balance">
-      <p class="text-sm uppercase tracking-[0.3em] text-[var(--gold)]/80">Education</p>
-      <h1 class="text-4xl font-black sm:text-5xl">Education &amp; Certifications</h1>
-      <p class="text-lg text-[var(--muted)]">Continuous learning across cybersecurity, infrastructure, and leadership.</p>
-    </header>
 
       <section class="card">
         <h2 class="text-2xl font-bold text-[color:var(--accent-cyan)]">Professional Certifications</h2>
-    <section class="mt-12 grid gap-8">
-      <article class="rounded-3xl border border-white/10 bg-[var(--card)]/70 p-6 shadow-lg">
-        <h2 class="text-2xl font-bold">Bachelor of Science — Information Technology</h2>
-        <p class="mt-2 text-[var(--muted)]">Western Governors University · Expected 2028</p>
-        <p class="mt-4 text-[var(--muted)]">Focus on systems administration, cloud services, and cybersecurity coursework aligned to hands-on roles.</p>
-      </article>
 
         <div class="mt-4 grid md:grid-cols-2 gap-4">
           <div class="p-4 border rounded">
             <div class="font-semibold">CompTIA Security+</div>
             <div class="text-sm text-[color:var(--muted)]">CompTIA — Certified</div>
-      <article class="rounded-3xl border border-white/10 bg-[var(--card)]/70 p-6 shadow-lg">
-        <h2 class="text-2xl font-bold">Professional Certifications</h2>
-        <dl class="mt-4 grid gap-4 sm:grid-cols-2">
-          <div class="rounded-2xl border border-white/10 bg-black/30 p-4">
-            <dt class="font-semibold">CompTIA Security+</dt>
-            <dd class="text-sm text-[var(--muted)]">Active</dd>
           </div>
 
           <div class="p-4 border rounded">
             <div class="font-semibold">CompTIA A+</div>
             <div class="text-sm text-[color:var(--muted)]">CompTIA — Certified</div>
-          <div class="rounded-2xl border border-white/10 bg-black/30 p-4">
-            <dt class="font-semibold">CompTIA A+</dt>
-            <dd class="text-sm text-[var(--muted)]">Active</dd>
           </div>
 
           <div class="p-4 border rounded">
             <div class="font-semibold">ITIL Foundations</div>
             <div class="text-sm text-[color:var(--muted)]">AXELOS — Certified</div>
-          <div class="rounded-2xl border border-white/10 bg-black/30 p-4">
-            <dt class="font-semibold">ITIL Foundations</dt>
-            <dd class="text-sm text-[var(--muted)]">AXELOS</dd>
           </div>
+  <main id="main-content" class="page-shell">
+    <header class="page-header">
+      <p class="kicker">Education</p>
+      <h1>Education &amp; Certifications</h1>
+      <p>Continuous learning across cybersecurity, infrastructure, and leadership.</p>
+    </header>
 
           <div class="p-4 border rounded">
             <div class="font-semibold">eJPT (Junior Penetration Tester)</div>
             <div class="text-sm text-[color:var(--muted)]">eLearnSecurity — Certified</div>
-          <div class="rounded-2xl border border-white/10 bg-black/30 p-4">
-            <dt class="font-semibold">eJPT (Junior Penetration Tester)</dt>
-            <dd class="text-sm text-[var(--muted)]">eLearnSecurity</dd>
           </div>
+    <section class="education-grid">
+      <article class="education-card">
+        <h2>Bachelor of Science — Information Technology</h2>
+        <p class="meta">Western Governors University · Expected 2028</p>
+        <p class="card-summary">Focus on systems administration, cloud services, and cybersecurity coursework aligned to hands-on roles.</p>
+      </article>
 
           <div class="p-4 border rounded">
             <div class="font-semibold">Microsoft: AZ-800/801</div>
             <div class="text-sm text-[color:var(--muted)]">Windows Server Hybrid Administrator</div>
-          <div class="rounded-2xl border border-white/10 bg-black/30 p-4">
-            <dt class="font-semibold">Microsoft AZ-800/801</dt>
-            <dd class="text-sm text-[var(--muted)]">Windows Server Hybrid Administrator</dd>
           </div>
 
           <div class="p-4 border rounded">
             <div class="font-semibold">Linux Fundamentals</div>
             <div class="text-sm text-[color:var(--muted)]">Various Providers — Certified</div>
-          <div class="rounded-2xl border border-white/10 bg-black/30 p-4">
-            <dt class="font-semibold">Linux Fundamentals</dt>
-            <dd class="text-sm text-[var(--muted)]">Multiple providers</dd>
           </div>
         </div>
       </section>
-        </dl>
+      <article class="education-card">
+        <h2>Professional Certifications</h2>
+        <ul>
+          <li>CompTIA Security+ (active)</li>
+          <li>CompTIA A+ (active)</li>
+          <li>ITIL Foundations · AXELOS</li>
+          <li>eJPT (Junior Penetration Tester) · eLearnSecurity</li>
+          <li>Microsoft AZ-800/801 — Windows Server Hybrid Administrator</li>
+          <li>Linux Fundamentals — multiple providers</li>
+        </ul>
       </article>
 
       <section class="card">
@@ -156,9 +132,9 @@
           <li>FortiGate firewall configuration, VPNs, VLANs, Layer 2/3 routing</li>
           <li>SentinelOne EDR, email security (DKIM/SPF/DMARC), ransomware containment</li>
           <li>PowerShell scripting, ConnectWise, Veeam, Azure AD/Entra and Intune</li>
-      <article class="rounded-3xl border border-white/10 bg-[var(--card)]/70 p-6 shadow-lg">
-        <h2 class="text-2xl font-bold">Focus Areas</h2>
-        <ul class="mt-4 list-disc space-y-2 pl-5 text-sm text-white/90">
+      <article class="education-card">
+        <h2>Focus Areas</h2>
+        <ul>
           <li>VMware vCenter/ESXi, Windows Server, Active Directory, DNS/DHCP.</li>
           <li>FortiGate firewalls, VPN design, segmentation, and SD-WAN.</li>
           <li>SentinelOne EDR, email security hardening, ransomware containment.</li>
@@ -174,18 +150,18 @@
     <div class="max-w-5xl mx-auto px-6 flex justify-between">
       <div>© <span id="year"></span> Dillan Valor</div>
       <div><a href="/" class="text-[color:var(--muted)]">Home</a> · <a href="experience.html" class="text-[color:var(--muted)]">Experience</a></div>
-  <footer class="border-t border-white/10">
-    <div class="mx-auto flex max-w-6xl flex-col gap-4 px-4 py-8 text-sm text-[var(--muted)] sm:flex-row sm:items-center sm:justify-between">
-      <p>© <span id="year"></span> Dillan Valor • valorworks.dev</p>
-      <div class="flex items-center gap-4">
-        <a class="hover:text-[var(--gold)]" href="mailto:hello@valorworks.dev">Email</a>
-        <a class="hover:text-[var(--gold)]" href="https://github.com/DillanValor" rel="noopener">GitHub</a>
-        <a class="hover:text-[var(--gold)]" href="/assets/resume.pdf">Resume</a>
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      <p>© <span data-current-year></span> Dillan Valor • valorworks.dev</p>
+      <div class="nav-links">
+        <a class="nav-link" href="mailto:hello@valorworks.dev">Email</a>
+        <a class="nav-link" href="https://github.com/DillanValor" rel="noopener">GitHub</a>
+        <a class="nav-link" href="/assets/resume.pdf">Resume</a>
       </div>
     </div>
   </footer>
 
   <script>try{document.getElementById('year').textContent=new Date().getFullYear()}catch(e){}</script>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="/assets/site.js" defer></script>
 </body>
 </html>
