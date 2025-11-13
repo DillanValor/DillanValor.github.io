@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg: #050505;
+    --card: #121212;
+    --red: #b91c1c;
+    --gold: #d4af37;
+    --muted: #a3a3a3;
+  }
+  body {
+    @apply font-sans bg-[var(--bg)] text-white antialiased;
+  }
+}
