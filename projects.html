@@ -1,178 +1,203 @@
-<!doctype html>
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Projects — Dillan Valor</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <meta name="description" content="Selected security, infrastructure, and lab projects from Dillan Valor." />
-  <link rel="canonical" href="https://valorworks.dev/projects.html" />
-  <meta property="og:title" content="Projects — Dillan Valor" />
-  <meta property="og:description" content="Security remediation, Microsoft 365 hardening, and lab work." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://valorworks.dev/projects.html" />
-  <meta property="og:image" content="https://valorworks.dev/assets/service-award.png" />
-  <link rel="icon" href="/assets/warfare-ensignia.png" />
-  <link rel="preconnect" href="https://cdn.tailwindcss.com" crossorigin>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet" />
-  <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
-  <style>
-    :root{ --bg:#0B0B0B; --fg:#F8F8F8; --muted:#9CA3AF; --accent-cyan:#06b6d4; }
-    body{ background:var(--bg); color:var(--fg); }
-    .card { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.03); border-radius: 0.75rem; padding: 1rem; }
-    :root {
-      --bg: #050505;
-      --card: #121212;
-      --red: #b91c1c;
-      --gold: #d4af37;
-      --muted: #a3a3a3;
-    }
-    html, body { font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif; background: var(--bg); color: #fff; }
-  </style>
-</head>
-<body class="antialiased">
-  <header class="py-8 border-b border-[rgba(255,255,255,0.03)]">
-    <div class="max-w-6xl mx-auto px-6 flex items-center justify-between">
-      <div>
-        <a href="/" class="text-sm text-[color:var(--muted)]">← Home</a>
-        <h1 class="text-4xl font-bold mt-4">Selected Projects & Coursework</h1>
-        <p class="text-[color:var(--muted)] mt-2">Infrastructure initiatives, security implementations, and lab write-ups.</p>
-<body class="bg-[var(--bg)] text-white antialiased selection:bg-[var(--red)] selection:text-white">
-  <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-3 focus:left-3 focus:z-50 focus:rounded focus:bg-[var(--gold)] focus:px-3 focus:py-1 focus:text-black">Skip to content</a>
-  <header class="sticky top-0 z-30 border-b border-white/10 bg-black/60 backdrop-blur supports-[backdrop-filter]:bg-black/50">
-    <nav class="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6 lg:px-8" aria-label="Primary">
-      <a href="/" class="flex items-center gap-3 font-semibold tracking-wide">
-        <img src="/assets/warfare-ensignia.png" alt="Submarine warfare insignia" class="h-8 w-12 rounded object-cover" loading="lazy" decoding="async" />
-        <span>Dillan Valor</span>
-      </a>
-      <div class="hidden items-center gap-6 text-sm font-medium md:flex">
-        <a class="transition hover:text-[var(--gold)]" href="/experience.html">Experience</a>
-        <a class="transition hover:text-[var(--gold)]" href="/projects.html" aria-current="page">Projects</a>
-        <a class="transition hover:text-[var(--gold)]" href="/education.html">Education</a>
-        <a class="rounded-lg border border-white/20 px-3 py-1.5 transition hover:border-[var(--gold)] hover:text-[var(--gold)]" href="mailto:hello@valorworks.dev">Contact</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Projects &amp; Labs — Dillan Valor</title>
+    <meta
+      name="description"
+      content="Selected security, infrastructure, and lab projects that show how I work through real problems."
+    />
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="site-logo">
+          DILLAN <span>VALOR</span>
+        </a>
+        <nav class="nav">
+          <a href="experience.html">Experience</a>
+          <a href="projects.html">Projects</a>
+          <a href="education.html">Education</a>
+          <a href="index.html#contact">Contact</a>
+        </nav>
       </div>
-      <div>
-        <a href="/assets/resume.pdf" class="text-sm bg-[rgba(255,255,255,0.03)] px-3 py-2 rounded">Download resume</a>
-      </div>
-    </div>
-      <details class="relative md:hidden">
-        <summary class="flex cursor-pointer items-center gap-2 rounded-lg border border-white/20 px-3 py-1.5 text-sm">Menu</summary>
-        <div class="absolute right-0 mt-2 w-48 rounded-xl border border-white/10 bg-black/90 p-3 text-sm shadow-lg">
-          <a class="block rounded px-2 py-1 hover:bg-white/10" href="/experience.html">Experience</a>
-          <a class="block rounded px-2 py-1 hover:bg-white/10" href="/projects.html" aria-current="page">Projects</a>
-          <a class="block rounded px-2 py-1 hover:bg-white/10" href="/education.html">Education</a>
-          <a class="block rounded px-2 py-1 hover:bg-white/10" href="mailto:hello@valorworks.dev">Contact</a>
-        </div>
-      </details>
-    </nav>
-  </header>
-
-  <main class="py-12">
-    <div class="max-w-6xl mx-auto px-6">
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <!-- Project card example (duplicate and edit for each project) -->
-        <article class="card">
-          <img src="/assets/project-pinning-1200.jpg" alt="Network hardening diagram" class="w-full h-40 object-cover rounded" />
-          <h3 class="text-xl font-bold mt-4 text-[color:var(--accent-cyan)]">Network Hardening Workshop</h3>
-          <p class="text-[color:#cbd5e1] mt-2">Layered hardening for Windows servers and FortiGate firewall; improved monitoring and reduced attack surface.</p>
-          <div class="mt-3 text-sm text-[color:var(--muted)]">Tech: FortiGate, Windows Server, PowerShell</div>
-          <div class="mt-4 flex gap-2">
-            <a href="#" class="text-[color:var(--muted)] underline">Case study</a>
-            <a href="#" class="ml-auto bg-[rgba(255,255,255,0.03)] px-3 py-1 rounded">View</a>
-          </div>
-        </article>
-  <main id="main-content" class="mx-auto max-w-6xl px-4 py-16 sm:px-6">
-    <header class="space-y-3 text-balance">
-      <p class="text-sm uppercase tracking-[0.3em] text-[var(--gold)]/80">Projects</p>
-      <h1 class="text-4xl font-black sm:text-5xl">Selected Projects &amp; Labs</h1>
-      <p class="text-lg text-[var(--muted)]">Security remediation, Microsoft 365 hardening, and labs that prove process.</p>
     </header>
 
-    <section class="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-      <article class="flex h-full flex-col rounded-3xl border border-white/10 bg-[var(--card)]/70 p-5 shadow-lg">
-        <picture class="block overflow-hidden rounded-2xl border border-white/10">
-          <img src="/assets/project-card.jpg" alt="Network hardening visual" class="h-40 w-full object-cover" loading="lazy" decoding="async" width="800" height="400" />
-        </picture>
-        <div class="mt-4 flex-grow">
-          <h2 class="text-xl font-semibold">Network Hardening Playbook</h2>
-          <p class="mt-2 text-sm text-[var(--muted)]">Baseline for FortiGate, Windows Server, and Azure AD, including MFA enforcement, firewall templates, and documented rollback plans.</p>
+    <main>
+      <section class="page-header">
+        <div class="container">
+          <p class="section-kicker">Projects &amp; Labs</p>
+          <h1 class="page-title">Selected Projects &amp; Coursework</h1>
+          <p class="page-intro">
+            Infrastructure initiatives, security implementations, and lab
+            write-ups that show how I approach problems end-to-end.
+          </p>
         </div>
-        <div class="mt-4 flex items-center gap-3 text-sm">
-          <a class="text-[var(--gold)] underline" href="https://github.com/DillanValor" rel="noopener">Read notes</a>
-          <span class="text-[var(--muted)]">Updated quarterly</span>
-        </div>
-      </article>
+      </section>
 
-      <article class="flex h-full flex-col rounded-3xl border border-white/10 bg-[var(--card)]/70 p-5 shadow-lg">
-        <div class="rounded-2xl border border-dashed border-white/10 p-6 text-center text-sm text-[var(--muted)]">
-          Azure Sentinel incident response lab screenshots</div>
-        <div class="mt-4 flex-grow">
-          <h2 class="text-xl font-semibold">Microsoft 365 Security Operations Lab</h2>
-          <p class="mt-2 text-sm text-[var(--muted)]">Threat hunting exercises in Defender for Endpoint, Sentinel, and Purview DLP with findings logged to shared runbooks.</p>
-        </div>
-        <div class="mt-4 flex items-center gap-3 text-sm">
-          <a class="text-[var(--gold)] underline" href="https://github.com/DillanValor" rel="noopener">View lab steps</a>
-          <span class="text-[var(--muted)]">Includes PowerShell snippets</span>
-        </div>
-      </article>
+      <section>
+        <div class="container card-grid">
+          <!-- Network hardening -->
+          <article class="card">
+            <div class="card-title-row">
+              <div>
+                <h2 class="card-title">Network Hardening Playbook</h2>
+                <div class="card-meta">
+                  FortiGate · Windows Server · Azure AD
+                </div>
+              </div>
+            </div>
+            <p class="card-body">
+              Baseline for FortiGate, Windows Server, and Azure AD environments,
+              including MFA enforcement, firewall templates, and rollback plans
+              that MSP teams can actually follow.
+            </p>
+            <ul class="card-list">
+              <li>
+                Created opinionated but practical hardening checklists for new
+                client onboardings.
+              </li>
+              <li>
+                Documented “before/after” policy states so changes are
+                traceable, not mystery configs.
+              </li>
+              <li>
+                Focused on fast wins: lock down external exposure without
+                breaking business-critical flows.
+              </li>
+            </ul>
+            <div class="card-tags">
+              <span class="card-tag">Network hardening</span>
+              <span class="card-tag">Fortinet</span>
+              <span class="card-tag">Change control</span>
+            </div>
+          </article>
 
-        <!-- Placeholder -->
-        <article class="card">
-          <div class="h-40 bg-[rgba(255,255,255,0.02)] rounded flex items-center justify-center text-[color:var(--muted)]">Project image</div>
-          <h3 class="text-xl font-bold mt-4 text-[color:var(--accent-cyan)]">CTF Write-Up: Web Exploitation</h3>
-          <p class="text-[color:#cbd5e1] mt-2">Exploit breakdown and secure code mitigation checklist.</p>
-          <div class="mt-4 flex gap-2">
-            <a href="#" class="text-[color:var(--muted)] underline">Read</a>
-            <a href="#" class="ml-auto bg-[rgba(255,255,255,0.03)] px-3 py-1 rounded">View</a>
-          </div>
-        </article>
-      <article class="flex h-full flex-col rounded-3xl border border-white/10 bg-[var(--card)]/70 p-5 shadow-lg">
-        <div class="rounded-2xl border border-dashed border-white/10 p-6 text-center text-sm text-[var(--muted)]">
-          Screenshot placeholder</div>
-        <div class="mt-4 flex-grow">
-          <h2 class="text-xl font-semibold">Incident Documentation Toolkit</h2>
-          <p class="mt-2 text-sm text-[var(--muted)]">Template-driven SOPs, severity matrices, and communications checklists used with MSP clients.</p>
-        </div>
-        <div class="mt-4 flex items-center gap-3 text-sm">
-          <a class="text-[var(--gold)] underline" href="mailto:hello@valorworks.dev">Request access</a>
-          <span class="text-[var(--muted)]">PDF + Airtable base</span>
-        </div>
-      </article>
-    </section>
+          <!-- M365 security ops lab -->
+          <article class="card">
+            <div class="card-title-row">
+              <div>
+                <h2 class="card-title">
+                  Microsoft 365 Security Operations Lab
+                </h2>
+                <div class="card-meta">
+                  Defender · Sentinel · Purview DLP
+                </div>
+              </div>
+            </div>
+            <p class="card-body">
+              Hands-on lab series walking through simulated phishing, malware,
+              and data loss scenarios in Microsoft 365, focusing on detection,
+              investigation, and documentation.
+            </p>
+            <ul class="card-list">
+              <li>
+                Threat hunting exercises across Defender for Endpoint and
+                Sentinel to trace lateral movement.
+              </li>
+              <li>
+                Purview DLP rules tuned for realistic MSP tenants instead of
+                “turn on everything and hope”.
+              </li>
+              <li>
+                Runbook templates for triage, escalation, and customer updates.
+              </li>
+            </ul>
+            <div class="card-tags">
+              <span class="card-tag">Threat hunting</span>
+              <span class="card-tag">DLP</span>
+              <span class="card-tag">Runbooks</span>
+            </div>
+          </article>
 
-        <!-- Add more projects here -->
-    <section class="mt-16 rounded-3xl border border-white/10 bg-black/40 p-6 sm:p-10">
-      <div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-        <div>
-          <h2 class="text-2xl font-bold">Need specific evidence?</h2>
-          <p class="text-[var(--muted)]">Let me know what use case you want to see — I can share redacted SOPs, scripts, or spin up a lab.</p>
+          <!-- CTF write-up -->
+          <article class="card">
+            <div class="card-title-row">
+              <div>
+                <h2 class="card-title">CTF Write-Up: Web Exploitation</h2>
+                <div class="card-meta">Capture the Flag · AppSec</div>
+              </div>
+            </div>
+            <p class="card-body">
+              Exploit breakdown and secure-coding checklist from a web
+              exploitation challenge, focusing less on “tricks” and more on what
+              defenders and engineers should fix.
+            </p>
+            <ul class="card-list">
+              <li>
+                Step-by-step notes of enumeration, exploitation, and
+                post-exploitation.
+              </li>
+              <li>
+                Mapped findings to concrete mitigations (headers, input
+                validation, logging).
+              </li>
+              <li>
+                Presented in a format that both security and dev teams can use.
+              </li>
+            </ul>
+            <div class="card-tags">
+              <span class="card-tag">CTF</span>
+              <span class="card-tag">Web security</span>
+              <span class="card-tag">Education</span>
+            </div>
+          </article>
+
+          <!-- Incident documentation toolkit -->
+          <article class="card">
+            <div class="card-title-row">
+              <div>
+                <h2 class="card-title">Incident Documentation Toolkit</h2>
+                <div class="card-meta">Templates · SOPs · Playbooks</div>
+              </div>
+            </div>
+            <p class="card-body">
+              Template-driven SOPs, severity matrices, and communication
+              checklists designed for MSP incidents so customers always know
+              what’s happening and why.
+            </p>
+            <ul class="card-list">
+              <li>
+                Standardized severity levels and response expectations for
+                security vs. availability events.
+              </li>
+              <li>
+                Timeline-oriented note-taking format that feeds directly into
+                post-incident reports.
+              </li>
+              <li>
+                Built to be reused across clients with room for tenant-specific
+                quirks.
+              </li>
+            </ul>
+            <div class="card-tags">
+              <span class="card-tag">Incident response</span>
+              <span class="card-tag">Documentation</span>
+              <span class="card-tag">MSP</span>
+            </div>
+          </article>
         </div>
-        <a href="mailto:hello@valorworks.dev" class="inline-flex items-center gap-2 rounded-xl bg-[var(--red)] px-5 py-3 font-semibold shadow-lg transition hover:brightness-110">Start a conversation</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>&copy; <span id="year"></span> Dillan Valor • valorworks.dev</div>
+        <div class="footer-links">
+          <a href="mailto:">Email</a>
+          <a href="https://github.com/DillanValor" target="_blank">GitHub</a>
+          <a href="assets/Dillan_Valor_Resume.pdf">Resume</a>
+        </div>
       </div>
-    </div>
-    </section>
-  </main>
-
-  <footer class="py-8 border-t border-[rgba(255,255,255,0.03)] text-sm text-[color:var(--muted)]">
-    <div class="max-w-6xl mx-auto px-6 flex justify-between">
-      <div>© <span id="year"></span> Dillan Valor</div>
-      <div><a href="/" class="text-[color:var(--muted)]">Home</a> · <a href="experience.html" class="text-[color:var(--muted)]">Experience</a></div>
-  <footer class="border-t border-white/10">
-    <div class="mx-auto flex max-w-6xl flex-col gap-4 px-4 py-8 text-sm text-[var(--muted)] sm:flex-row sm:items-center sm:justify-between">
-      <p>© <span id="year"></span> Dillan Valor • valorworks.dev</p>
-      <div class="flex items-center gap-4">
-        <a class="hover:text-[var(--gold)]" href="mailto:hello@valorworks.dev">Email</a>
-        <a class="hover:text-[var(--gold)]" href="https://github.com/DillanValor" rel="noopener">GitHub</a>
-        <a class="hover:text-[var(--gold)]" href="/assets/resume.pdf">Resume</a>
-      </div>
-    </div>
-  </footer>
-
-  <script>try{document.getElementById('year').textContent=new Date().getFullYear()}catch(e){}</script>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
-</body>
+      <script>
+        document.getElementById("year").textContent =
+          new Date().getFullYear();
+      </script>
+    </footer>
+  </body>
 </html>
