@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Education & Certifications — Dillan Valor</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root{ --bg:#0B0B0B; --fg:#F8F8F8; --muted:#9CA3AF; --accent-cyan:#06b6d4; }
+    body{ background:var(--bg); color:var(--fg); }
+    .card { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.03); border-radius: 0.75rem; padding: 1.5rem; }
+  </style>
+</head>
+<body class="antialiased">
+  <header class="py-8 border-b border-[rgba(255,255,255,0.03)]">
+    <div class="max-w-5xl mx-auto px-6">
+      <a href="/" class="text-sm text-[color:var(--muted)]">← Home</a>
+      <h1 class="text-4xl font-bold mt-4">Education & Certifications</h1>
+      <p class="text-[color:var(--muted)] mt-2">Continuous learning in cybersecurity and IT infrastructure.</p>
+    </div>
+  </header>
+
+  <main class="py-12">
+    <div class="max-w-5xl mx-auto px-6 space-y-8">
+      <section class="card">
+        <h2 class="text-2xl font-bold text-[color:var(--accent-cyan)]">Academic Background</h2>
+        <p class="mt-3 text-[color:#cbd5e1]">
+          Bachelor of Science — Information Technology (Western Governors University) — Expected 2028.
+        </p>
+        <p class="mt-2 text-[color:#cbd5e1]">Pursuing a practical, hands-on IT degree while working full-time, focusing on systems administration and cybersecurity.</p>
+      </section>
+
+      <section class="card">
+        <h2 class="text-2xl font-bold text-[color:var(--accent-cyan)]">Professional Certifications</h2>
+
+        <div class="mt-4 grid md:grid-cols-2 gap-4">
+          <div class="p-4 border rounded">
+            <div class="font-semibold">CompTIA Security+</div>
+            <div class="text-sm text-[color:var(--muted)]">CompTIA — Certified</div>
+          </div>
+
+          <div class="p-4 border rounded">
+            <div class="font-semibold">CompTIA A+</div>
+            <div class="text-sm text-[color:var(--muted)]">CompTIA — Certified</div>
+          </div>
+
+          <div class="p-4 border rounded">
+            <div class="font-semibold">ITIL Foundations</div>
+            <div class="text-sm text-[color:var(--muted)]">AXELOS — Certified</div>
+          </div>
+
+          <div class="p-4 border rounded">
+            <div class="font-semibold">eJPT (Junior Penetration Tester)</div>
+            <div class="text-sm text-[color:var(--muted)]">eLearnSecurity — Certified</div>
+          </div>
+
+          <div class="p-4 border rounded">
+            <div class="font-semibold">Microsoft: AZ-800/801</div>
+            <div class="text-sm text-[color:var(--muted)]">Windows Server Hybrid Administrator</div>
+          </div>
+
+          <div class="p-4 border rounded">
+            <div class="font-semibold">Linux Fundamentals</div>
+            <div class="text-sm text-[color:var(--muted)]">Various Providers — Certified</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <h3 class="font-semibold text-[color:var(--muted)]">Skills — quick list</h3>
+        <ul class="mt-2 list-disc list-inside text-[color:#cbd5e1]">
+          <li>VMware vCenter/ESXi, Windows Server, Active Directory, Group Policy, DNS/DHCP</li>
+          <li>FortiGate firewall configuration, VPNs, VLANs, Layer 2/3 routing</li>
+          <li>SentinelOne EDR, email security (DKIM/SPF/DMARC), ransomware containment</li>
+          <li>PowerShell scripting, ConnectWise, Veeam, Azure AD/Entra and Intune</li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <footer class="py-8 border-t border-[rgba(255,255,255,0.03)] text-sm text-[color:var(--muted)]">
+    <div class="max-w-5xl mx-auto px-6 flex justify-between">
+      <div>© <span id="year"></span> Dillan Valor</div>
+      <div><a href="/" class="text-[color:var(--muted)]">Home</a> · <a href="experience.html" class="text-[color:var(--muted)]">Experience</a></div>
+    </div>
+  </footer>
+
+  <script>try{document.getElementById('year').textContent=new Date().getFullYear()}catch(e){}</script>
+</body>
+</html>
